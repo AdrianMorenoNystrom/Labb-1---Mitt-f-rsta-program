@@ -11,8 +11,7 @@ namespace MyFirstProgram
             Console.WriteLine("Skriv in ett tal");
             // Denna rad skriver ut till användaren att den ska skriva in ett tal.
             string input = Console.ReadLine();
-            int number;
-            Int32.TryParse(input, out number);
+            int number = Int32.Parse(input);
 
             /* I dessa rader så förvarar jag det användaren skriver i en stringvariabel som jag döper till input.
              * Men eftersom Console.Readline() förvarar inputen som en string, så gör jag om den till en int.
